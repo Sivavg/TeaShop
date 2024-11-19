@@ -1,0 +1,185 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+  background-color: #f10f0f;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+header h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+header nav ul li {
+  list-style: none;
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #006400;
+  color: #fff;
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+/* About Section */
+#about {
+  padding: 3rem 0;
+  text-align: center;
+  background-color: #fff;
+}
+
+#about p {
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+
+/* Menu Section */
+#menu {
+  padding: 3rem 0;
+  background-color: #e0e0e0;
+}
+
+#menu h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.menu-items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.menu-item {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  width: 30%;
+}
+
+.menu-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.menu-item h3 {
+  margin: 1rem 0;
+  font-size: 1.5rem;
+}
+
+.menu-item p {
+  font-size: 1rem;
+}
+
+.menu-item strong {
+  font-size: 1.2rem;
+  color: #006400;
+}
+
+/* Contact Section */
+#contact {
+  padding: 3rem 0;
+  background-color: #fff;
+  text-align: center;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contact input,
+#contact textarea {
+  width: 80%;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+#contact button {
+  background-color: #006400;
+  color: #fff;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#contact button:hover {
+  background-color: #004d00;
+}
+
+/* Footer Section */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .menu-items {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .menu-item {
+      width: 80%;
+  }
+
+  header nav ul {
+      flex-direction: column;
+  }
+
+  header nav ul li {
+      margin: 10px 0;
+  }
+}

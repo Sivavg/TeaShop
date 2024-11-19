@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tea Shop</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script>
+        function response(){
+            document.getElementById('contactForm').addEventListener('submit', function(event) {
+    // Prevent form from submitting immediately
+            event.preventDefault();
+    
+    // Get the values from the form fields
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var message = document.getElementById('message').value;
+    
+    // Check if the fields are not empty
+            if (name !== '' && email !== '' && message !== '') {
+                 alert("Thank you for your message!❤️");
+                 document.getElementById('contactForm').reset();
+            } 
+});
+
+            
+        }
+    </script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Tea Shop</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="hero">
+            <h2>Welcome to the Best Tea Shop!</h2>
+            <p>Discover your perfect tea today.</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We offer a wide range of premium teas, sourced from the finest estates. Whether you like black tea, green tea, or herbal infusions, we have something for everyone.</p>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu">
+        <div class="container">
+            <h2>Our Tea Menu</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="images/blacktea.jpg" alt="Black Tea">
+                    <h3>Black Tea</h3>
+                    <p>A rich and bold tea to start your day.</p>
+                    <p><strong>$5.00</strong></p>
+                </div>
+                <div class="menu-item">
+                    <img src="images/greentea.jpeg" alt="Green Tea">
+                    <h3>Green Tea</h3>
+                    <p>A refreshing, healthy choice with antioxidants.</p>
+                    <p><strong>$4.50</strong></p>
+                </div>
+                <div class="menu-item">
+                    <img src="images/herbaltea.jpg" alt="Herbal Tea">
+                    <h3>Herbal Tea</h3>
+                    <p>Soothing and calming, perfect for relaxation.</p>
+                    <p><strong>$6.00</strong></p>
+                </div>
+                <div class="menu-item">
+                  <img src="images/whitetea.jpg" alt="Black Tea">
+                  <h3>Black Tea</h3>
+                  <p>A rich and bold tea to start your day.</p>
+                  <p><strong>$5.00</strong></p>
+              </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>For any inquiries, feel free to reach out to us.</p>
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea  id="message" placeholder="Your Message" required></textarea>
+                <button type="submit" onclick="response()">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Tea Shop. All Rights Reserved. SIVA</p>
+        </div>
+    </footer>
+</body>
+</html>
